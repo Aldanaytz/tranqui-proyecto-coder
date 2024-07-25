@@ -1,0 +1,420 @@
+/*! -------RESET ------ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*!-------header------ */
+
+header {
+    background-color: #fcc560;
+    text-align: left;
+    padding: 30px;
+    position: sticky;
+    top: 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+/* nav bar */
+.Logo {
+    width: 150px;
+}
+
+header nav ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+    font-size: 18px;
+}
+
+/*!---------- main------------ */
+
+
+
+/*como modifica el hero*/ 
+.hero{
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+    background-image: url(../img/dripped\ coffee.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.hero h2{
+    font-size: 40px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.hero p{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.hero a{
+    text-decoration: none;
+    color: black;
+    background-color:#fcc560;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+
+}
+.hero a:hover{
+    background-color: white;
+    font-weight: bold;
+    color:#f39200
+}
+h1 {
+    text-align: left;
+    color:#f39200;
+    background-color: #fcc560;
+    font-size: 38px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*SECCION NOVEDADES BLOG (HOME)*/
+
+.blog-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.blog .blog-flex div{
+    width: 300px;
+    height: 420px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #f39200;
+    border-radius: 20px;
+}
+.blog h2{
+    padding: 20px;
+    text-align: center;
+}
+
+.blog div h3{
+    font-size: 16px;
+    padding: 20px;
+}
+
+.blog div a{
+    text-decoration: none;
+    color: black;
+    background-color: #fcc560;
+    padding: 10px;
+    border-radius: 5px;
+}
+.blog a:hover{
+    background-color: white;
+    font-weight: bold;
+    color:#f39200
+}
+.blog div img{
+    width: 300px;
+    height: 300px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+
+/*----------SECCION TRAINING------------*/
+
+.training h2 {
+    color: black;
+    background-color: #fcc560;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.training-flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+    margin: 5px 50px 50px 50px;
+}
+
+.training-flex div {
+    width: 50%;
+    padding-right: 40px;
+}
+.training-flex p {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.training-flex div a{
+    text-decoration: none;
+    color: black;
+    background-color:#fcc560;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.trainin-flex a:hover{
+    background-color: white;
+    font-weight: bold;
+    color:#f39200
+}
+/*----------SECCION DE CONTACTO---------*/
+.contact h2 {
+    color: black;
+    background-color: #fcc560;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact img{
+    width: 200px;
+    border: 5px solid;
+    border-color: beige;
+    border-radius: 20px;
+    background-color: beige;
+    margin: auto;
+}
+
+.contact-flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*!------FOOTER--------*/
+footer {
+    background-color: #fcc560;
+    color: black;
+    font-size: 18px;
+    padding: 50px;
+
+}
+footer ul{
+    list-style: none;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*--------PAGECONTACT----------------------/*
+/* formulario */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    display: block;
+    width: 30%;
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.botonformulario {
+    background-color: beige;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.botonformulario:hover{
+    background-color: #f39200;
+}
+
+
+/*--------------PAGE TRAINING----------*/
+
+.grid-galeria {
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 65px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 400px;
+    grid-gap: 20px;
+}
+
+.grid-galeria div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.img-2{
+    grid-row: span 2;
+    object-fit: contain;
+}
+
+.img-7 {
+    grid-column: span 2;
+    object-fit: cover;
+}
+
+/*----------------------MEDIA QUERIS------------------------------------------------------------*/
+
+/*!HOME*/
+
+@media screen and (max-width:1000px) {
+    .training-flex {
+        flex-direction: column;
+    }
+
+    .training-flex div {
+        width: 100%;
+        text-align: center;
+        }
+    
+    .training-flex div a{
+        margin: 20px 50px 50px 50px;
+    }
+
+    .training-flex iframe{
+        margin-top: 50px;
+    }
+
+    .blog-flex{
+        flex-direction: column;
+    }
+
+    .blog .blog-flex div{
+        width: 500px;
+        height: 420px;
+    }
+
+    .blog div img{
+        width: 100%;
+        height: 300px;
+        object-fit: fill;
+    }
+}
+
+@media screen and (max-width:840px) {
+
+    header{
+        flex-direction: column;
+        position: static;
+    }
+    header nav ul li a{
+        font-size: 14px;
+        font-weight: bold;
+        padding-top: 10px;
+
+    }
+    .hero{
+        height: 40vh;
+    }
+    .hero h2{
+        font-size: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .hero p{
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    .hero a{
+        padding: 5px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    footer {
+        padding: 30px;
+    }
+    footer ul{
+        flex-direction: column;
+        margin: 10px;
+    }
+    .training-flex iframe{
+        width: 500px;
+        height: 300px;
+    }
+    .contact img{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    h1 {
+        font-size: 24px;
+    }
+    .Logo{
+        width: 100px;
+    }
+
+    .blog h2{
+        font-size: 20px;
+    }
+    .blog .blog-flex div{
+        width: 300px;
+        height: 420px;
+    }
+
+    .blog div img{
+        width: 100%;
+        height: 300px;
+        object-fit:cover;
+    }
+
+    .training h2{
+        font-size: 20px;
+    }
+    /*no logre acomodarlo bien :( */
+
+    .training-flex p{
+        font-size: 14px;
+        }
+    .training-flex div a{
+        margin: 0px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .training-flex iframe{
+        display: none;
+    }
+    .contact h2 {
+        font-size: 20px;
+    }
+    .contact img{
+        width: 80px;
+    }
+    
